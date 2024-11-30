@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shorthand Background</title>
     <style>
         body{
-            height: 100vh;
+            /* height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: cover;        
+            background-attachment: fixed; */
+
+
+            /* Shorthand = backfround 
+            color >image > position > repeat > [size] > attachment
+            No size usar / para divir o repeat e o size para funcionar
+            */
+            background: black url('imagens/wallpaper002.jpg') center center / cover no-repeat fixed;
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -41,7 +49,21 @@
 <body>
     <main>
         <h1>Teste de Imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus animi, necessitatibus, deleniti dolores repellat, voluptatum error natus asperiores recusandae dolore sapiente aperiam impedit? Debitis, praesentium. Corporis eveniet expedita ad eos? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus corrupti, ullam asperiores itaque expedita eveniet iusto sed, cupiditate maxime dolorum dignissimos dolorem ad quia minus mollitia esse. Eveniet, id quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea non molestias optio dolorum aliquam magni ipsum exercitationem aspernatur culpa. Illo corrupti harum eius, quisquam quaerat veniam debitis dicta iusto fuga.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus animi, necessitatibus, deleniti dolores repellat, voluptatum error natus asperiores recusandae dolore sapiente aperiam impedit? Debitis, praesentium. Corporis eveniet expedita ad eos? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus corrupti, ullam asperiores itaque expedita eveniet iusto sed, cupiditate maxime dolorum dignissimos dolorem ad quia minus mollitia esse. Eveniet, id quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea non molestias optio dolorum aliquam magni ipsum exercitationem aspernatur culpa. Illo corrupti harum eius, quisquam quaerat veniam debitis dicta iusto fuga.
+
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus animi, necessitatibus, deleniti dolores repellat, voluptatum error natus asperiores recusandae dolore sapiente aperiam impedit? Debitis, praesentium. Corporis eveniet expedita ad eos? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus corrupti, ullam asperiores itaque expedita eveniet iusto sed, cupiditate maxime dolorum dignissimos dolorem ad quia minus mollitia esse. Eveniet, id quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea non molestias optio dolorum aliquam magni ipsum exercitationem aspernatur culpa. Illo corrupti harum eius, quisquam quaerat veniam debitis dicta iusto fuga.
+
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus animi, necessitatibus, deleniti dolores repellat, voluptatum error natus asperiores recusandae dolore sapiente aperiam impedit? Debitis, praesentium. Corporis eveniet expedita ad eos? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus corrupti, ullam asperiores itaque expedita eveniet iusto sed, cupiditate maxime dolorum dignissimos dolorem ad quia minus mollitia esse. Eveniet, id quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea non molestias optio dolorum aliquam magni ipsum exercitationem aspernatur culpa. Illo corrupti harum eius, quisquam quaerat veniam debitis dicta iusto fuga.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus animi, necessitatibus, deleniti dolores repellat, voluptatum error natus asperiores recusandae dolore sapiente aperiam impedit? Debitis, praesentium. Corporis eveniet expedita ad eos? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus corrupti, ullam asperiores itaque expedita eveniet iusto sed, cupiditate maxime dolorum dignissimos dolorem ad quia minus mollitia esse. Eveniet, id quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea non molestias optio dolorum aliquam magni ipsum exercitationem aspernatur culpa. Illo corrupti harum eius, quisquam quaerat veniam debitis dicta iusto fuga.
+        </p>
+
     </main>
 </body>
 </html>
