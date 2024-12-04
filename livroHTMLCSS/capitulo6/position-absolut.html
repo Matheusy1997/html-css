@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento absoluto</title>
+    <style>
+        div{
+            width: 360px;
+            padding: 10px 20px;
+            border: 2px solid black;
+        }
+        
+        div.container{
+            position: relative;
+        }
+
+        p{
+            border: 2px dotted black;
+            padding-inline: 10px 20px;
+        }
+        .tres{
+            position: absolute;
+            background: #ddd;
+        }
+
+        p.tres{
+            background: #ddd;
+            left: 90px;
+            top: 125px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nostrum reprehenderit aliquam maxime dolor architecto odio soluta doloribus, ipsa ad. Illum, laboriosam odit. Totam nemo atque, sunt alias provident expedita.
+    </p>
+
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae neque quas libero debitis quo eum corrupti sequi! Iure libero sunt consequuntur eaque sint, excepturi totam accusantium vero assumenda esse?
+        </p>
+        <p class="tres">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium incidunt fugiat repellendus assumenda sit!
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas nulla maxime cupiditate inventore id! Esse reiciendis, cumque voluptatibus dolor dolorum nam optio quam quis minus laboriosam mollitia quos nesciunt voluptatum!
+        </p>
+    </div>
+</body>
+</html>

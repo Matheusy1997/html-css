@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empilhamento</title>
+    <style>
+        div{
+            border: 2px solid black;
+        }
+        div#a, div#b{
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        div#a{
+            position: relative;
+            left: 10px;
+            top: 15px;
+            z-index: 25;
+            width: 350px;
+            height: 200px;
+            background: #dddddd91;
+        }
+        div#b{
+            position: relative;
+            top: -230px;
+            z-index: 20;
+            height: 200px;
+        }
+        div.a-um{
+            position: absolute;
+            left: 65px;
+            top: 20px;
+            z-index: 10;
+            width: 200px;
+            height: 80px;
+            background: rgb(204, 255, 255);
+        }
+        div.a-dois{
+            position: absolute;
+            z-index: 5;
+            left: 120px;
+            top: 70px;
+            width: 110px;
+            height: 120px;
+            background: rgb(102, 255, 153);
+        }
+        div.a-tres{
+            position: absolute;
+            z-index: 2;
+            left: 165px;
+            top: 90px;
+            width: 90px;
+            height: 60px;
+            background: rgb(255, 204, 255);
+        }
+        div.b-um{
+            position: absolute;
+            z-index: 9500;
+            left: 145px;
+            top: 130px;
+            width: 200px;
+            height: 120px;
+            background: #ffd1d1;
+        }
+        div.b-dois{
+            position: absolute;
+            z-index: 1000;
+            left: 215px;
+            top: 170px;
+            width: 50px;
+            height: 60px;
+            background: #ccc;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="a">
+        DIV A
+        <div class="a-um"> DIV A-um</div>
+        <div class="a-dois"> DIV A-dois</div>
+        <div class="a-tres"> DIV A-dois</div>
+    </div>
+
+    <div id="b">
+        DIV B
+        <div class="b-um">DIV B-um</div>
+        <div class="b-dois">DIV B-dois</div>
+    </div>
+</body>
+</html>
