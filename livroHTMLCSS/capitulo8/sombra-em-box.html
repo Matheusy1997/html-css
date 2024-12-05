@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras em Box</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            width: 300px;
+            height: 200px;
+            background: gray;
+            display: inline-block;
+            margin: 15px
+        }
+       .um{box-shadow: #f90 5px 5px 5px;} 
+       .dois{box-shadow: #f90 5px 5px 5px 15px;} 
+       .tres{box-shadow: inset #f90 -10px 10px 15px;} 
+       .quatro{box-shadow: #f90 10px 0 8px -4px,
+        #f90 -10px 0 8px -4px;} 
+       .cinco{box-shadow: #f90 0 5px 4px -2px,
+        #f90 0 -5px 4px -2px;} 
+       .seis{box-shadow: #f90 0 0 10px 5px;} 
+       .sete{box-shadow: #f90;} 
+    </style>
+</head>
+<body>
+    <div class="um"></div>
+    <div class="dois"></div>
+    <div class="tres"></div>
+    <div class="quatro"></div>
+    <div class="cinco"></div>
+    <div class="seis"></div>
+    <div class="sete"></div>
+</body>
+</html>

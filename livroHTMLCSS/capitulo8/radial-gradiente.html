@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radial Gradiente</title>
+    <style>
+      div {
+        background: gray;
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        margin: 15px;
+      }
+
+      .um {
+        background: linear-gradient(to right,white, rgb(77, 76, 76), black);
+      }
+      .dois {
+        background: repeating-linear-gradient(
+          to right,
+          black,
+          white 10px,
+          black 20px
+        );
+      }
+      .tres {
+        background: radial-gradient(
+          50% 50% ellipse,
+          black,
+          white 10px,
+          black 20px
+        );
+      }
+      .quatro {
+        background: repeating-radial-gradient(
+          50% 50% ellipse,
+          black,
+          white 10px,
+          black 20px
+        );
+      }
+      .cinco {
+        background: repeating-linear-gradient(
+          -45deg,
+          black,
+          white 2px,
+          black 5px,
+          white 20px
+        );
+      }
+      .seis {
+        background: repeating-radial-gradient(
+          100% 50% ellipse,
+          black,
+          white 10px,
+          black 20px
+        );
+      }
+      .sete {
+        background-image: -moz-radial-gradient(
+          40px 60px,
+          100px 60px,
+          white,
+          black,
+          white
+        );
+        background-image: -webkit-radial-gradient(
+          40px 60px,
+          100px 60px,
+          white,
+          black,
+          white
+        );
+        background-image: radial-gradient(
+          40px 60px,
+          circle 100px 60px,
+          white,
+          black,
+          white
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="um"></div>
+    <div class="dois"></div>
+    <div class="tres"></div>
+    <div class="quatro"></div>
+    <div class="cinco"></div>
+    <div class="seis"></div>
+    <div class="sete"></div>
+  </body>
+</html>

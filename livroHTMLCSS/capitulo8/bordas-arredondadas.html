@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas Arredondadas</title>
+    <style>
+        div.div_um{
+            background: grey;
+            width: 300px;
+            height: 200px;
+            display: inline-block;
+            margin-right: 35px;
+            border-radius: 30px; /* Todos os lados iguais */
+        } 
+        div.div_dois{
+            background: grey;
+            width: 300px;
+            height: 200px;
+            display: inline-block;
+            border-top-left-radius: 80px 40px; /* Um lado especifico pegando eixo x e eixo y*/
+        }
+
+        div.div_tres{
+            background: grey;
+            width: 300px;
+            height: 200px;
+            display: inline-block;
+            border-radius: 80px 40px; /* top esquerdo/baixo direito & top direito/baixo esquerdo*/
+        }
+
+        div.div_quatro{
+            background: grey;
+            width: 300px;
+            height: 200px;
+            display: inline-block;
+            border-radius: 10px 30px 80px;
+        }
+
+        div.div_cinco{
+            background: grey;
+            width: 300px;
+            height: 200px;
+            display: inline-block;
+            border-radius: 10px 40px 80px 120px;
+        }
+
+        div.div_seis{
+            background: grey;
+            width: 300px;
+            height: 200px;
+            display: inline-block;
+            border-radius: 80px 40px 20px 10px / 10px 20px 40px 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div_um"></div>
+    <div class="div_dois"></div>
+    <div class="div_tres"></div>
+    <div class="div_quatro"></div>
+    <div class="div_cinco"></div>
+    <div class="div_seis"></div>
+</body>
+</html>
