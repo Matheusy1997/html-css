@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        font: 100%/1.4 sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .tudo {
+        width: 1000px;
+        margin: 0 auto;
+      }
+      h1,
+      h2,
+      p {
+        margin: 12px 0px 5px 0px;
+      }
+      h1,
+      h2 {
+        font-size: 1.4rem;
+      }
+      header,
+      section,
+      footer {
+        padding: 1px 0px;
+      }
+      header {
+        background: #555;
+        color: #eee;
+      }
+      section {
+        /* display: -webkit-flex; Para Safari e Opera */
+        display: flex; /* Para suporte nativo */
+        background: #eee;
+        flex-flow: row ;
+      }
+      article {
+        width: 300px;
+        border: 1px solid black;
+        margin: 0px;
+        padding: 3px 0px;
+        text-align: justify;
+      }
+      footer {
+        background: #444;
+        color: #eee;
+      }
+
+      article:first-child{flex: 3 200px;}
+      article + article{flex: 2 300px;}
+      article:last-child{flex: 1 380px;}
+    </style>
+  </head>
+  <body>
+    <div class="tudo">
+      <header>
+        <h1>Topo</h1>
+      </header>
+      <section>
+        <article>
+          <h2>Titulo 1</h2>
+          <p>Texto da seção 1 - Lorem ipsum dolor sit amet... Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta recusandae, eligendi, totam consectetur, facere corrupti mollitia sequi vero quae perferendis quaerat earum asperiores libero doloremque error ipsum aspernatur fuga expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo omnis laudantium, natus beatae quam distinctio similique quisquam modi debitis esse officia molestiae aperiam porro at accusamus quod est sapiente cum.</p>
+        </article>
+        <article>
+          <h2>Título 2</h2>
+          <p>Texto da seção 2 - Curabitur hendrerit erat ut augue... Lorem ipsum dolor sit amet consectetur adipisicing elit. In vitae voluptatum perferendis inventore, reiciendis debitis aliquam, tempora quod eaque fugiat hic optio repudiandae quidem commodi ipsam quo explicabo. Porro, expedita?</p>
+        </article>
+        <article>
+          <h2>Título 3</h2>
+          <p>Texto da seção 3 - Pellentesque sapien... Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, impedit? Facilis rem adipisci iure nihil vitae ratione labore aperiam odio officiis illum ad aspernatur id debitis nobis, perspiciatis nam saepe.</p>
+        </article>
+      </section>
+      <footer>
+        <h2>Rodapé</h2>
+      </footer>
+    </div>
+    <!-- /.tudo -->
+  </body>
+</html>
