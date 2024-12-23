@@ -1,4 +1,8 @@
 @charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 header, header > nav{
     flex-flow: column nowrap;
@@ -10,5 +14,9 @@ header > h1{
 }
 
 header > nav > a{
-    width: 95vw;
+    width: 90vw;
+}
+
+main{
+    max-width: 320px;
 }
