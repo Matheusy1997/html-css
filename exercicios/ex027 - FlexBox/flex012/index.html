@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            /* flex-direction: padrão vem row/ usado para linha
+                       direção --------------->
+                              row-reverse
+                              <---------------         
+                flex-direction: column/ usado para coluna
+                                column-reverse
+            */
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;           
+            text-align: center;    
+        }
+
+        /* Ordem para a propriedade flex = flex-grow + fles-shrink + flex-basis */
+        /* flex: 0 1 auto; == flex initial; Valor padrão */
+        /* flex: 0 0 auto; == flex: none;  para itens nada flexíveis */
+        /* flex: 1 1 auto; == flex: auto; para caixas mega flaxíveis */
+        /* flex: 3; == flex: 3 1 auto; Assim so declarando o grow e matendo o restando como padrão */
+        div#cxA{ 
+            flex: 1 0 200px;
+        }
+        div#cxB{ 
+            flex: 1 1 200px;
+        }
+        div#cxC{ 
+            flex: 1 8 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+</body>
+</html>
